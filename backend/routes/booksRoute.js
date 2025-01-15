@@ -14,8 +14,7 @@ router.post('/',async (request,response)=>{
             return response.status(400).send({
                 message: 'Send all required fields: title,author,publishYear' //this message will be returned as a json object
             });
-        }
-        const newBook = {
+        }        const newBook = {
             title: request.body.title,
             author: request.body.author,
             publishYear: request.body.publishYear,

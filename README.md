@@ -1,5 +1,4 @@
 # Bookstore
-
 This is a full-stack MERN (MongoDB, Express, React, Node.js) application for managing a collection of books. The application allows users to create, read, update, and delete books
 
 # Backend
