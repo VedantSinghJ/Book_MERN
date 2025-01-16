@@ -12,7 +12,7 @@ app.use(express.json());
 
 //middleware for handling cors policy
 //option 1: Allow all origin with default of cors(*)
-app.use(cors());
+// app.use(cors());
 //option 2: Allow custom origins
 // app.use(cors({
 //     origin: 'https://localhost:3000',
@@ -20,6 +20,12 @@ app.use(cors());
 //     allowedHeaders: ['Content-Type'],
 // })
 // );
+app.use(cors({
+    origin: ['https://your-app-name.onrender.com', 'http://localhost:3000'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type'],
+}));
+
 
 app.get('/',(request,response)=>{
     console.log(request)

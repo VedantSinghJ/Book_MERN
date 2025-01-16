@@ -3,6 +3,7 @@ import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import BackButton from '../componenets/BackButton'
 import Spinner from '../componenets/spinner'
+import  API_BASE_URL  from '../constant'
 
 
 const ShowBook = () => {
@@ -14,7 +15,7 @@ const ShowBook = () => {
   useEffect(()=>{
     setLoading(true);
     axios
-        .get(`http://localhost:5555/books/${id}`)
+        .get(`${API_BASE_URL}/books/${id}`)
         .then((response)=>{
           setBook(response.data); //we are returning specific book so .data , if array then .data.data
           setLoading(false);
