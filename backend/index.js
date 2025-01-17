@@ -21,7 +21,7 @@ app.use(express.json());
 // })
 // );
 app.use(cors({
-    origin: ['https://bookcollection-three.vercel.app/', 'http://localhost:3000'],
+    origin: ['https://bookcollection-r947.onrender.com', 'http://localhost:3000'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type'],
 }));
