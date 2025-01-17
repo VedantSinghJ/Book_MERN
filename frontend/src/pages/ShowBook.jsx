@@ -1,8 +1,8 @@
 import React,{useState,useEffect} from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
-import BackButton from '../componenets/BackButton'
-import Spinner from '../componenets/spinner'
+import BackButton from '../components/BackButton'
+import Spinner from '../components/Spinner'
 import  API_BASE_URL  from '../constant'
 
 

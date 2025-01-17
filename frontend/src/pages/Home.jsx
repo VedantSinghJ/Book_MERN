@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Spinner from "../componenets/spinner";
+import Spinner from "../components/Spinner";
 import { Link } from "react-router-dom";
 import { AiOutlineEdit } from "react-icons/ai";
 import { BsInfoCircle } from "react-icons/bs";
 import { MdOutlineAddBox, MdOutlineDelete } from "react-icons/md";
-import BooksTable from "../componenets/home/BooksTable";
-import BooksCard from "../componenets/home/BooksCard";
+import BooksTable from "../components/home/BooksTable";
+import BooksCard from "../components/home/BooksCard";
 import API_BASE_URL from "../constant";
 
 const Home = () => {
